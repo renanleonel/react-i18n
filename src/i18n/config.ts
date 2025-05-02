@@ -33,6 +33,9 @@ function loadTranslationFiles() {
   const processContext = (context: Context, lang: Language) => {
     Object.keys(context).forEach((path) => {
       const filename = path.match(/\/([^/]+)\.json$/)?.[1];
+
+      if (!filename) return;
+
       const module = context[path];
 
       resources[lang][filename] = 'default' in module ? module.default : module;
