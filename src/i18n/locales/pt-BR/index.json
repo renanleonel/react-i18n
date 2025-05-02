@@ -1,0 +1,8 @@
+{
+  "greeting": "Olá, Mundo!",
+  "languageSelector": "Selecione um idioma",
+  "languages": {
+    "en": "Inglês",
+    "pt-BR": "Português"
+  }
+}
